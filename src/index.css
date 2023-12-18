@@ -5,13 +5,14 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Kalnia', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .top-line {
-  background-color: lightblue;
+  background-color: rgb(50, 115, 52);
+  text-decoration-color: azure;
   text-align: center;
   padding: 10px;
   position: fixed;
@@ -20,7 +21,7 @@ body {
 }
 
 button {
-  background-color: lightblue;
+  background-color: rgb(50, 115, 52);
   border-radius: 5px;
   border-width: 1px;
   padding: 10px;
@@ -28,7 +29,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(190, 229, 241);
+  background-color: rgb(50, 115, 52);
 }
 
 input {
@@ -49,11 +50,11 @@ input {
   width: 310px;
   height: 270px;
   padding: 5px;
-  border: 1px solid lightblue;
+  border: 1px solid rgb(50, 115, 52);
 }
 
 .photo-card:hover {
-  background-color: lightblue;
+  background-color: rgb(50, 115, 52);
 }
 
 .info {
