@@ -5,14 +5,13 @@ img {
 }
 
 body {
-  font-family: 'Kalnia', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .top-line {
   background-color: rgb(119, 200, 122);
-  color: azure;
   text-align: center;
   padding: 10px;
   position: fixed;
