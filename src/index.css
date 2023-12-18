@@ -11,8 +11,8 @@ body {
 }
 
 .top-line {
-  background-color: rgb(50, 115, 52);
-  text-decoration-color: azure;
+  background-color: rgb(119, 200, 122);
+  color: azure;
   text-align: center;
   padding: 10px;
   position: fixed;
@@ -21,7 +21,7 @@ body {
 }
 
 button {
-  background-color: rgb(50, 115, 52);
+  background-color: rgb(119, 200, 122);
   border-radius: 5px;
   border-width: 1px;
   padding: 10px;
@@ -29,7 +29,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(50, 115, 52);
+  background-color: rgb(119, 200, 122);
 }
 
 input {
@@ -50,11 +50,11 @@ input {
   width: 310px;
   height: 270px;
   padding: 5px;
-  border: 1px solid rgb(50, 115, 52);
+  border: 1px solid rgb(119, 200, 122);
 }
 
 .photo-card:hover {
-  background-color: rgb(50, 115, 52);
+  background-color: rgb(119, 200, 122);
 }
 
 .info {
