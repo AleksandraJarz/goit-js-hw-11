@@ -71,3 +71,41 @@ function photosRendered(data) {
     Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
   }
 }
+
+imageCounter += imagesPerPage;
+if (imageCounter >= data.totalHits) {
+  loadMoreBtn.style.display = 'none';
+  Notiflix.Notify.failure(
+    "Were sorry, but you've reached the end of search results"
+  );
+} else {
+  loadMoreBtn.style.display = 'block';
+}
+
+const html = photosArr
+  .map(
+    elem => `<div class="photo-card">
+    <a class="gallery-item" href=${elem.largeImageURL}>
+  <img src=${elem.webformatURL} alt="${elem.tags}" width="300px" height="200px" loading="lazy" />
+  </a>
+  <div class="info">
+    <p class="info-item">
+      <b>Likes ${elem.likes} </b>
+    </p>
+    <p class="info-item">
+      <b>Views ${elem.views}</b>
+    </p>
+    <p class="info-item">
+      <b>Comments ${elem.comments}</b>
+    </p>
+    <p class="info-item">
+      <b>Downloads ${elem.downloads}</b>
+    </p>
+  </div>
+</div>`
+  )
+  .join('');
+gallery.insertAdjacentHTML('beforeend', html);
+
+searchForm.addEventListener('submit', handleSubmit);
+loadMoreBtn.addEventListener('click', handleLoadMore);
