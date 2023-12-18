@@ -48,4 +48,26 @@ async function fetchImages(currentpage) {
     per_page: imagesPerPage,
   });
   loadMoreBtn.style.display = 'none';
+  try {
+    const response = await fetch(`${baseUrl}?${searchParams.toString()}`);
+    const photos = await response.json();
+    photosRendered(photos);
+  } catch (error) {
+    Notiflix.Notify.failure(error);
+  }
+}
+
+//galeria zdjęć
+function photosRendered(data) {
+  const photosArr = data.hits;
+  if (photosArr.length === 0) {
+    Notiflix.Notify.failure(
+      'Sorry, there are no images matching your search query. Please try again.'
+    );
+    return;
+  }
+
+  if (page === 1) {
+    Notiflix.Notify.success(`Hooray! We found ${data.totalHits} images.`);
+  }
 }
