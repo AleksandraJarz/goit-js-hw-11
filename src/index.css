@@ -1,0 +1,75 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.top-line {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(190, 229, 241);
+}
+
+input {
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.photo-card {
+  width: 310px;
+  height: 270px;
+  padding: 5px;
+  border: 1px solid lightblue;
+}
+
+.photo-card:hover {
+  background-color: lightblue;
+}
+
+.info {
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.load-more {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  object-fit: cover;
+}
